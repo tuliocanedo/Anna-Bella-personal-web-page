@@ -17,6 +17,10 @@ body {
 	padding: 10px;
 }
 
+#footer {
+	text-align: center;
+}
+
 a {
 	color: #4b566a;
 	text-decoration: none;
@@ -26,6 +30,10 @@ a {
 
 .centralize {
 	text-align: center;
+}
+
+.img-campaigns {
+	border: 10px solid #c3c3ae;
 }
 
 h1 {

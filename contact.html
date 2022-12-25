@@ -9,7 +9,7 @@
    <body>
       <div id="principal">
    
-     <img src="images/capa.png">
+     <img class="capa" src="images/capa.png">
 
         <div id="menu">
 
@@ -21,14 +21,66 @@
         </div>
 
         <div id="content">
-
             <h1>Contact</h1>
-            
-            <p>
-               Volutpat tortor nec dictumst habitant dapibus vel curabitur vestibulum, bibendum nulla ac etiam conubia ultrices gravida, pharetra erat feugiat eros at velit donec. est sem nulla diam egestas pulvinar himenaeos litora vehicula elementum ac ipsum, faucibus ad feugiat netus primis elit vehicula ante sem diam integer, erat a eros ac urna condimentum tempor congue justo molestie. habitant pulvinar sollicitudin ornare viverra vel malesuada mauris nunc feugiat aliquam justo class purus lobortis, at congue potenti vel egestas iaculis varius ipsum arcu erat dolor cras senectus. 
-            </p>
-            
-            <img src="images/foto1.png" class="img-campaigns">
+
+            <form>
+               <label for="nomesobrenome">Name and Surname</label>
+               <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+               <label for="email">E-mail</label>
+               <input type="email" id="email" class="input-padrao" required placeholder="seuemail@domínio.com">
+
+               <label for="telefone">Phone</label>
+               <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+               <label for="mensagem">Message</label>
+               <textarea cols="68" rows="10" id="mensagem" class="input-padrao" required></textarea>
+   
+               <fieldset>
+                  <legend class="teste" id="teste">How do you wish to be contacted?</legend>
+                  <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+   
+                  <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Phone</label>
+   
+                  <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">WhatsApp</label>
+               
+               </fieldset>
+               
+               <fieldset class="question">
+                  <legend>What time do you prefer to be attended?</legend>
+                  <select>
+                     <option>Morning</option>
+                     <option>Afternoon</option>
+                     <option>Evening</option>
+                  </select>
+               </fieldset>
+   
+               <label class="checkbox"><input type="checkbox"> Would you like to receive our news by e-mail?</label> <br>
+               <input type="submit" value="Send Form" class="enviar">
+               
+               <table>
+                  <thead>
+                     <tr>
+                        <th>Day</th>
+                        <th>Opening Hours</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Monday</td>
+                        <td>8h ~ 20h</td>
+                     </tr>
+                     <tr>
+                        <td>Wednesday</td>
+                        <td>8h ~ 20h</td>
+                     </tr>
+                     <tr>
+                        <td>Friday</td>
+                        <td>8h ~ 20h</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </form>
 
             <div>
                 <strong>E-mail:</strong> contact@annabella.com <br>
@@ -36,10 +88,10 @@
             </div>
 
 
-        </div>
+         </div>
 
         <div class="centralize" id="footer">
-            All rights reserved
+         &copy; All rights reserved
         </div>
 
       </div>

@@ -131,3 +131,19 @@ td, th {
 	border: 1px solid #000000;
 	padding: 8px 15px;
 }
+
+@media screen and (max-width: 480px) {
+	
+	a {
+		display: block;
+		text-transform: uppercase;
+		color:  #4b566a;
+		padding: 5px;
+		margin: 20px;
+		font-weight: bold;
+		font-size: 55px;
+		text-decoration: none;
+		border: 3px black solid;
+	}
+
+}
